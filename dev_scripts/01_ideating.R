@@ -39,4 +39,21 @@ tbl(con, "adb") |>
   arrange(drug.class) |> 
   View()
 
+tbl(con, "adb") |>
+  collect() |> 
+  filter(grepl('aminopenicillin', drug.class)) |> 
+  select(drug.name , main.source, drug.class) |> 
+  View()
 
+tbl(con, "adb") |>
+  collect() |> 
+  filter(grepl('inhibitor', drug.class)) |> 
+  select(drug.name , main.source, drug.class) |> 
+  View()
+
+tbl(con, "adb") |> 
+  select(main.source) |> 
+  distinct() |> 
+  collect() |> 
+  arrange(main.source) |> 
+  View()
