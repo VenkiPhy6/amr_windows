@@ -11,7 +11,7 @@ library(plotly)
 # Define the Shiny UI
 ui <- fluidPage(
   tags$style(type="text/css", "body {margin:0; padding:0;}"),
-  h2("Clickable Matrix Dashboard"),
+  h2("Windows into AMR innovation"),
   plotlyOutput("matrix", height = "50vh"),
   uiOutput("dashboard")
 )
