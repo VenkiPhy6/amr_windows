@@ -50,3 +50,6 @@ rsconnect/
 
 # renv
 renv/library/
+
+#data files ignored
+data/
