@@ -54,6 +54,6 @@ renv/library/
 #data files ignored
 data/
 
-api_keys
+**/api_keys
 
 py_amrwindows/
